@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador de Texto - ONE</title>
+    <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+<body>
+    <main>
+        <div class="decoder">
+
+            <div class="decoder-console">
+                <textarea id="inputText" class="decoder-console-text" placeholder="Insira aqui o texto para codificar ou decodificar..."></textarea>
+                <section class="decoder-console-buttons">
+                    <button class="decoder-console-encrypt" onclick="encryptClick()">Criptografar</button>
+                    <button class="decoder-console-decrypt" onclick="decryptClick()">Descriptografar</button>
+                </section>
+            </div>
+
+            <div class="decoder-result">
+
+                <div id="resultTemp">
+                    <img src="./src/img/decoder-icon.png" alt="Ícone do decodificar">
+                </div>
+
+                <div id="resultBody" style="display: none;">
+                    <p class="decoder-result-copy">(Toque no texto para copiar)</p>
+                    <p id="outputText" class="decoder-result-text"></p>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 por Lucas de Morais.</p>
+    </footer>
+    <script src="./src/js/script.js"></script>
+</body>
+</html>
